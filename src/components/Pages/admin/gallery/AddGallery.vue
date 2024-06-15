@@ -90,7 +90,7 @@ export default {
   methods: {
     async fetchImages() {
       try {
-        const response = await axios.get('http://localhost:5000/api/gallery/images')
+        const response = await axios.get('http://backend-0s8d.onrender.com/api/gallery/images')
         console.log('Fetched images:', response.data) // API'den gelen veriyi konsola yazdırın
         if (Array.isArray(response.data)) {
           this.images = response.data
@@ -104,7 +104,7 @@ export default {
     },
     async deleteImage(id) {
       try {
-        await axios.delete(`http://localhost:5000/api/gallery/images/${id}`)
+        await axios.delete(`http://backend-0s8d.onrender.com/api/gallery/images/${id}`)
         await this.fetchImages()
       } catch (error) {
         console.error('Error deleting image', error)

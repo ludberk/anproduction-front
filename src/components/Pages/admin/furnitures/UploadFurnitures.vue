@@ -33,7 +33,7 @@ export default {
       console.log('Uploading image:', this.selectedFile)
 
       try {
-        const response = await axios.post('http://localhost:5000/api/upload/furnitures', formData, {
+        const response = await axios.post('http://backend-0s8d.onrender.com/api/upload/furnitures', formData, {
           headers: {
             'Content-Type': 'multipart/form-data'
           }

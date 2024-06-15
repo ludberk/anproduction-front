@@ -19,7 +19,7 @@ export default {
   methods: {
     async handleSubmit() {
       try {
-        const response = await axios.post('http://localhost:5000/api/auth/login', this.formData)
+        const response = await axios.post('http://backend-0s8d.onrender.com/api/auth/login', this.formData)
         localStorage.setItem('accessToken', response.data.accessToken)
 
         this.router.push({ name: 'user-profile', params: { id: response.data.userId } })

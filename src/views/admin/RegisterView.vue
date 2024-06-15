@@ -54,7 +54,7 @@ export default {
       console.log('Form data being sent:', this.formData) // Log form data
 
       try {
-        const response = await axios.post('http://localhost:5000/api/auth/register', this.formData)
+        const response = await axios.post('http://backend-0s8d.onrender.com/api/auth/register', this.formData)
         console.log('Response from server:', response) // Log server response
         this.message = response.data.message
       } catch (error) {

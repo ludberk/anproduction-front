@@ -12,7 +12,7 @@ export default {
   methods: {
     async submitForm() {
       try {
-        const response = await axios.post('http://localhost:5000/api/submit', {
+        const response = await axios.post('http://backend-0s8d.onrender.com/api/submit', {
           name: this.name,
           number: this.number,
           message: this.message

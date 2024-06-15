@@ -13,7 +13,7 @@ export default {
   methods: {
     async fetchImages() {
       try {
-        const response = await axios.get('http://localhost:5000/api/ironworks/images')
+        const response = await axios.get('http://backend-0s8d.onrender.com/api/ironworks/images')
         this.images = response.data
       } catch (error) {
         console.error('Error fetching images', error)

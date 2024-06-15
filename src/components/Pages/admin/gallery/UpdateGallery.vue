@@ -38,7 +38,7 @@ export default {
 
       try {
         const response = await axios.put(
-          `http://localhost:5000/api/gallery/images/${this.image._id}`,
+          `http://backend-0s8d.onrender.com/api/gallery/images/${this.image._id}`,
           formData,
           {
             headers: {

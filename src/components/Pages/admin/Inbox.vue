@@ -10,7 +10,7 @@ export default {
   methods: {
     async loadContacts() {
       try {
-        const response = await axios.get('http://localhost:5000/api/contacts')
+        const response = await axios.get('http://backend-0s8d.onrender.com/api/contacts')
         this.contacts = response.data
       } catch (error) {
         console.error(error)
@@ -19,7 +19,7 @@ export default {
     },
     async deleteContact(id) {
       try {
-        const response = await axios.delete(`http://localhost:5000/api/contacts/${id}`)
+        const response = await axios.delete(`http://backend-0s8d.onrender.com/api/contacts/${id}`)
         alert(response.data.message)
         this.loadContacts()
       } catch (error) {

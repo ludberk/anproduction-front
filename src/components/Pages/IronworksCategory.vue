@@ -29,14 +29,14 @@ export default {
   methods: {
     async fetchCategories() {
       try {
-        const response = await axios.get('http://localhost:5000/api/categories')
+        const response = await axios.get('http://backend-0s8d.onrender.com/api/categories')
         this.categories = response.data.filter((category) => category.link === '/ironworks')
       } catch (error) {
         console.error('Error fetching categories', error)
       }
     },
     getImageUrl(path) {
-      return path ? `http://localhost:5000/${path}` : ''
+      return path ? `http://backend-0s8d.onrender.com/${path}` : ''
     }
   }
 }

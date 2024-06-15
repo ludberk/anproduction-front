@@ -109,7 +109,7 @@ export default {
         formData.append('image', this.imageFile)
         formData.append('link', this.link)
 
-        const response = await axios.post('http://localhost:5000/api/categories', formData, {
+        const response = await axios.post('http://backend-0s8d.onrender.com/api/categories', formData, {
           headers: {
             'Content-Type': 'multipart/form-data'
           }
@@ -123,7 +123,7 @@ export default {
     },
     async fetchCategories() {
       try {
-        const response = await axios.get('http://localhost:5000/api/categories')
+        const response = await axios.get('http://backend-0s8d.onrender.com/api/categories')
         this.categories = response.data
       } catch (error) {
         console.error(error)
@@ -131,7 +131,7 @@ export default {
     },
     async deleteCategory(id) {
       try {
-        await axios.delete(`http://localhost:5000/api/categories/${id}`)
+        await axios.delete(`http://backend-0s8d.onrender.com/api/categories/${id}`)
         await this.fetchCategories()
       } catch (error) {
         console.error('Error deleting image', error)
@@ -153,7 +153,7 @@ export default {
         formData.append('link', this.link)
 
         const response = await axios.put(
-          `http://localhost:5000/api/categories/${this.editId}`,
+          `http://backend-0s8d.onrender.com/api/categories/${this.editId}`,
           formData,
           {
             headers: {
@@ -171,7 +171,7 @@ export default {
       }
     },
     getImageUrl(path) {
-      return path ? `http://localhost:5000/${path}` : ''
+      return path ? `http://backend-0s8d.onrender.com/${path}` : ''
     },
     resetForm() {
       this.name = ''

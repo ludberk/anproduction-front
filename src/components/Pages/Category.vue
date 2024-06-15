@@ -2,8 +2,11 @@
   <div id="container" class="w-full min-h-[100vh]">
     <div v-if="categories.length" class="content-wrapper">
       <div class="news-card" v-for="category in categories" :key="category._id">
-        <RouterLink :to="category.link" class="news-card__card-link"></RouterLink>
-        <img :src="getImageUrl(category.image)" alt="category.name" />
+        <RouterLink
+        :to="category.link" 
+          class="news-card__card-link"
+        ></RouterLink>
+        <img  :src="getImageUrl(category.image)" class="news-card__image" />
         <div class="news-card__text-wrapper">
           <h2 class="news-card__title text-2xl font-bold">
             {{ category.name }}

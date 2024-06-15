@@ -8,7 +8,7 @@
         <img class="image" :src="getImageUrl(category.image)" :alt="category.name" />
       </div>
       <div class="content-container">
-        <p class="title">{{ category.name }}</p>
+        <p style="color: #222;" class="title">{{ category.name }}</p>
       </div>
     </div>
   </div>

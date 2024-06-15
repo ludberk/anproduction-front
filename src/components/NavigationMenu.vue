@@ -12,7 +12,7 @@
         <ul class="logo_container">
           <li>
             <RouterLink to="/"
-              ><img class="logo" src="../../../public/logo.svg" alt="logo"
+              ><img class="logo" src="../assets/logo.png" alt="logo"
             /></RouterLink>
           </li>
         </ul>

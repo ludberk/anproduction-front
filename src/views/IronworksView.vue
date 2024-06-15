@@ -13,7 +13,7 @@ import FooterComponent from '../components/Footer.vue'
   <br /><br />
   <IronworksSwiperComponent />
   <IronworksCategoryComponent />
-<div class="line_container">
+  <div class="line_container">
     <div class="line">
       <div class="title">
         <h2>Ən Kreativ Konstruksiyalara Sahib Olun</h2>
@@ -136,7 +136,7 @@ import FooterComponent from '../components/Footer.vue'
   max-width: 600px;
   height: auto;
   font-size: 0.8em;
-  a{
+  a {
     width: 100%;
     max-width: 160px;
     height: 50px;
@@ -148,12 +148,11 @@ import FooterComponent from '../components/Footer.vue'
     color: @second;
     text-align: center;
     padding: 10px;
-    transition: .2s;
-    &:hover{
+    transition: 0.2s;
+    &:hover {
       background: @second;
       color: @primary;
     }
   }
 }
-
 </style>

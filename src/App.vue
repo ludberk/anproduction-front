@@ -1,5 +1,5 @@
 <script>
-import LoaderSpinner from './components/LoaderSpinner.vue';
+import LoaderSpinner from './components/LoaderSpinner.vue'
 
 export default {
   name: 'App',
@@ -9,25 +9,25 @@ export default {
   data() {
     return {
       loading: true
-    };
+    }
   },
   mounted() {
-    window.addEventListener('load', this.hideSpinner);
+    window.addEventListener('load', this.hideSpinner)
   },
   methods: {
     hideSpinner() {
-      this.loading = false;
+      this.loading = false
     }
   },
   beforeDestroy() {
-    window.removeEventListener('load', this.hideSpinner);
+    window.removeEventListener('load', this.hideSpinner)
   }
-};
+}
 </script>
 
 <template>
-    <LoaderSpinner :show="loading" />
-    <div v-if="!loading">
-      <router-view />
-    </div>
+  <LoaderSpinner :show="loading" />
+  <div v-if="!loading">
+    <router-view />
+  </div>
 </template>

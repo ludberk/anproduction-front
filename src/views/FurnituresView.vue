@@ -126,7 +126,7 @@ import FooterComponent from '../components/Footer.vue'
   max-width: 600px;
   height: auto;
   font-size: 0.8em;
-  a{
+  a {
     width: 100%;
     max-width: 160px;
     height: 50px;
@@ -138,12 +138,11 @@ import FooterComponent from '../components/Footer.vue'
     color: @second;
     text-align: center;
     padding: 10px;
-    transition: .2s;
-    &:hover{
+    transition: 0.2s;
+    &:hover {
       background: @second;
       color: @primary;
     }
   }
 }
-
 </style>

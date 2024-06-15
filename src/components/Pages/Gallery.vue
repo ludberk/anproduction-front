@@ -30,7 +30,7 @@ export default {
   methods: {
     async fetchImages() {
       try {
-        const response = await axios.get('http://localhost:5000/api/gallery/images')
+        const response = await axios.get('http://backend-0s8d.onrender.com/api/gallery/images')
         this.images = response.data
       } catch (error) {
         console.error('Error fetching images', error)
